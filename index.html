@@ -1,12 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="refresh" content="0; url=https://id.crifasia.com" />
-  <title>Redirecting...</title>
-</head>
-<body>
-  <p>If you are not redirected automatically, <a href="https://id.crifasia.com">click here</a>.</p>
-</body>
-</html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
 
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-C1416JPGV2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-C1416JPGV2');
+    </script>
+
+    <!-- Delay redirect to allow GA to register -->
+    <script>
+      setTimeout(() => {
+        window.location.href = "https://id.crifasia.com";
+      }, 1500);
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to <a href="https://id.crifasia.com">https://id.crifasia.com</a>...</p>
+  </body>
+</html>
